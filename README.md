@@ -1,4 +1,4 @@
-# gipHy-api
+# giphy-api
 
 ## Project setup
 ```
