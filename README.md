@@ -1,4 +1,4 @@
-# gihpy-api
+# gipHy-api
 
 ## Project setup
 ```
