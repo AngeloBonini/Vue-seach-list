@@ -1,5 +1,7 @@
+
 <template>
-  <input placeholder="Type and search for gifs" v-model="search" @input="onSearch">
+
+  <input placeholder="Procure por gifs" v-model="search" @input="onSearch"/>
 </template>
 
 <script>
@@ -19,7 +21,7 @@ export default {
       }, 500)
     },
     makeSearch() {
-      fetch(`https://api.giphy.com/v1/gifs/search?api_key=iVte716rEN6EMceLFe29Bj5I4R92xabL&q=${this.search}&limit=9`)
+      fetch(`https://api.giphy.com/v1/gifs/search?api_key=iVte716rEN6EMceLFe29Bj5I4R92xabL&q=${this.search}&limit=18`)
           .then(response => response.json())
           .then(result => {
             this.$emit('gifs-fetched', result);
