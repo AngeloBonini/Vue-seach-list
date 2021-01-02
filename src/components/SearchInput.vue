@@ -21,7 +21,7 @@ export default {
       }, 500)
     },
     makeSearch() {
-      fetch(`https://api.giphy.com/v1/gifs/search?api_key=iVte716rEN6EMceLFe29Bj5I4R92xabL&q=${this.search}&limit=18`)
+      fetch(`https://api.giphy.com/v1/gifs/search?api_key=iVte716rEN6EMceLFe29Bj5I4R92xabL&q=${this.search}&limit=3`)
           .then(response => response.json())
           .then(result => {
             this.$emit('gifs-fetched', result);

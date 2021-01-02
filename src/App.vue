@@ -1,17 +1,24 @@
 <template>
+    <div>
+<Conversor base-coin="USD" convertedCoin="BRL"/>
+<p></p>
     <search-input @gifs-fetched="onGifsFetched"/>
 
     <gif-list :gifs="gifs"/>
+    
+    </div>
 </template>
 
 <script>
 import SearchInput from "@/components/SearchInput";
 import GifList from "@/components/GifList";
+import Conversor from "@/components/Conversor";
 export default {
   name: 'App',
   components: {
     GifList,
-    SearchInput
+    SearchInput,
+    Conversor
   },
   data() {
     return {
