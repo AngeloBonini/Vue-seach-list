@@ -1,6 +1,9 @@
 .<template>
   <div class="conversor">
-    <h2>{{ baseCoin }} para {{ convertedCoin }}</h2>
+    <h2><strong>
+    {{ baseCoin }} para {{ convertedCoin }}
+    </strong>
+    </h2>
     <input type="text"  v-model="baseCoin_value" v-bind:placeholder="baseCoin">
     <input type="button" value="Converter" v-on:click="converter">
     <h2>{{convertedCoin_value}}</h2>
