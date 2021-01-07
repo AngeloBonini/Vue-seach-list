@@ -1,4 +1,4 @@
-# giphy-api
+# vited
 
 ## Project setup
 ```
